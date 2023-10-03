@@ -1,0 +1,162 @@
+{
+  "types": [
+    "Izaberi",
+    "Sport",
+    "Vreme",
+    "Zabava",
+    "Politika",
+    "Tehnologija",
+    "Putovanja"
+  ],
+  "articles": [
+    {
+      "id": 5,
+      "title": "Manchester City je osvojio Ligu Sampiona",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt vulputate enim, eu tincidunt erat hendrerit sit amet. Sed enim diam, vulputate at pellentesque sed, luctus eget justo. Donec vel massa at tellus facilisis fringilla. Sed eu nisi nulla. Vestibulum neque tortor, egestas in lacus in, suscipit porttitor magna. ",
+      "autor": {
+        "id": 1,
+        "ime": "Antonije",
+        "prezime": "Misic",
+        "email": "antonijemisic@gmail.com",
+        "password": "Antonije1"
+      },
+      "tip": "Sport"
+    },
+    {
+      "id": 6,
+      "title": "Vremenska prognoza",
+      "content": "Sutra ce vreme biti oblacno, mestimicno s kisom. Temperatura oko 23 stepena.",
+      "autor": {
+        "id": 1,
+        "ime": "Antonije",
+        "prezime": "Misic",
+        "email": "antonijemisic@gmail.com",
+        "password": "Antonije1"
+      },
+      "tip": "Vreme"
+    },
+    {
+      "id": 7,
+      "title": "Muzika kao Univerzalni Jezik: Kako Muzika Povezuje Kulture Širom Sveta",
+      "content": "Muzika je oduvek bila nešto više od samo zvuka. Ona je jezik koji ne poznaje granice, koji spaja ljude bez obzira na njihovu kulturu, jezik ili geografsko poreklo. Kroz vekove, muzika je bila sredstvo izraza i komunikacije koje je doprinosilo razumevanju i povezivanju različitih zajednica širom sveta.",
+      "autor": {
+        "id": 1,
+        "ime": "Antonije",
+        "prezime": "Misic",
+        "email": "antonijemisic@gmail.com",
+        "password": "Antonije1"
+      },
+      "tip": "Zabava"
+    },
+    {
+      "id": 8,
+      "title": "Otkrivanje Tajanstvenih Tajni Venecije: Magična Avantura na Vodama",
+      "content": "Venecija, poznata kao \"Grad Kanala\" ili \"Grad na Vodi,\" oduvek je bila magnet za putnike širom sveta. Njen jedinstveni ambijent, bogata istorija i neobična arhitektura čine je jednim od najromantičnijih i najfotogeničnijih gradova na svetu. Danas ćemo vas povesti na virtuelnu avanturu kroz ovu magičnu destinaciju i otkriti tajne koje čekaju da budu otkrivene.",
+      "autor": {
+        "id": 2,
+        "ime": "Mihajlo",
+        "prezime": "Misic",
+        "email": "mihajlo@gmail.com",
+        "password": "Antonije1"
+      },
+      "tip": "Putovanja"
+    }
+  ],
+  "korisnici": [
+    {
+      "id": 1,
+      "ime": "Antonije",
+      "prezime": "Misic",
+      "email": "antonijemisic@gmail.com",
+      "password": "Antonije1"
+    },
+    {
+      "id": 2,
+      "ime": "Mihajlo",
+      "prezime": "Misic",
+      "email": "mihajlo@gmail.com",
+      "password": "Antonije1"
+    },
+    {
+      "id": 3,
+      "ime": "Aleksa",
+      "prezime": "Nedeljkovic",
+      "email": "aleksa@gmail.com",
+      "password": "Antonije1"
+    }
+  ],
+  "komentari": [
+    {
+      "id": 1,
+      "tekst": "Ne nece da zameni",
+      "clanakID": 2,
+      "user": {
+        "id": 3,
+        "ime": "Aleksa",
+        "prezime": "Nedeljkovic",
+        "email": "aleksa@gmail.com",
+        "password": "Antonije1"
+      }
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 2,
+        "ime": "Mihajlo",
+        "prezime": "Misic",
+        "email": "mihajlo@gmail.com",
+        "password": "Antonije1"
+      },
+      "tekst": "Barcelona je bolja",
+      "clanakID": 1
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 1,
+        "ime": "Antonije",
+        "prezime": "Misic",
+        "email": "antonijemisic@gmail.com",
+        "password": "Antonije1"
+      },
+      "tekst": "Ne nije barsa bolja, real je",
+      "clanakID": 1
+    },
+    {
+      "id": 4,
+      "user": {
+        "id": 2,
+        "ime": "Mihajlo",
+        "prezime": "Misic",
+        "email": "mihajlo@gmail.com",
+        "password": "Antonije1"
+      },
+      "tekst": "idk",
+      "clanakID": 2
+    },
+    {
+      "id": 5,
+      "user": {
+        "id": 1,
+        "ime": "Antonije",
+        "prezime": "Misic",
+        "email": "antonijemisic@gmail.com",
+        "password": "Antonije1"
+      },
+      "tekst": "Mislim da hoce",
+      "clanakID": 2
+    },
+    {
+      "id": 6,
+      "user": {
+        "id": 2,
+        "ime": "Mihajlo",
+        "prezime": "Misic",
+        "email": "mihajlo@gmail.com",
+        "password": "Antonije1"
+      },
+      "tekst": "Trebao je Inter da osvoji.",
+      "clanakID": 5
+    }
+  ]
+}

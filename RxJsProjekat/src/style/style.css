@@ -1,0 +1,786 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerDiv {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    color: white;
+    border: 1px solid black;
+    background-color: green;
+    text-align: right;
+    
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+}
+
+.desni-div {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    transition: margin-left 0.3s ease;
+}
+
+.levi-div {
+    width: 400px;
+    position: fixed;
+    left: -400px;
+    height: 200%;
+    background-color: green;
+    transition: left 0.3s ease;
+}
+
+.levi-div.active {
+    left: 0;
+    position: absolute;
+}
+
+.levi-div.active+.desni-div {
+    margin-left: 400px;
+}
+
+.btnOpenForm {
+    width: 200px;
+}
+
+.clankovi-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article-div {
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 400px;
+    margin: 5%;
+    cursor: pointer;
+}
+:hover.article-div{
+   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.title-article-div {
+    padding: 10%;
+    text-align: center;
+    color: green;
+    font-size: 24px;
+}
+
+.autor-div {
+    padding-left: 5%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.tip-div {
+    padding: 5%;
+}
+
+.content-article-div {
+    padding: 5%;
+}
+
+.forma-div {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.login-div {
+    text-align: right;
+    color: white;
+    background-color: green;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.btnLogIn {
+    margin-top: 50px;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 1%;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.btnLogIn {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.tekst-no-register {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.tekstic {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.btn-go-to-register {
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.btn-go-to-register {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.register-div {
+    color: white;
+    background-color: green;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.register-forma-div {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.valid-input {
+    border: 2px solid green;
+}
+
+.invalid-input {
+    border: 2px solid red;
+}
+
+.email-input {
+
+    margin-right: 10px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.password-input {
+
+    height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.email-register-input {
+
+    height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.password-register-input {
+
+    height: 30px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ime-input {
+
+
+    margin-right: 10px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.prezime-input {
+
+    height: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.confirm-password-input {
+    margin-right: 10px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btnPrijava {
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnRegister {
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.btnPrijava {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.tekst-login {
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.tekstic2 {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.btn-go-to-login {
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.btn-go-to-login {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.article-input-div {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.title-input-div {
+    padding: 10%;
+    text-align: center;
+}
+
+.autor-input-div {
+    padding-left: 5%;
+}
+
+.tip-input-div {
+    padding-left: 5%;
+}
+
+.content-input-div {
+    padding: 5%;
+}
+
+.add-article-div {
+    margin-top: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btnOpenForm {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.btnOpenForm {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.btnopenDiv {
+    display: flex;
+}
+
+.add-form {
+    max-width: 400px;
+    width: 100%;
+    border-right: 1px solid black;
+}
+
+.add-dialog-form {
+    margin: 20px 0;
+    height: 100%;
+    max-width: 400px;
+    width: 100%;
+}
+@media screen and (max-width:900px) {
+    .add-form
+    {
+        border: none;
+    }
+    .clanak-div{
+        flex-direction: column;
+    }
+    .clanak-komentari-div{
+        min-height: 300px;
+    }
+    .clanak-info-container
+    {
+        min-height: 400px;
+    }
+    .forma-div{
+        flex-direction: column;
+    }
+    .email-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .password-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .btnPrijava{
+        
+        margin: 10 auto;
+    }
+    .register-forma-div{
+        flex-direction: column;
+    }
+    .ime-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .prezime-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .email-register-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .password-register-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .confirm-password-input{
+        margin: 5 auto;
+        width: 70%;
+    }
+    .btnRegister{
+        margin: 10 auto;
+    }
+
+    
+}
+
+.title-label {
+    font-size: 20px;
+    margin-right: 32px;
+}
+
+.inputTitle {
+    width: 300px;
+    font-size: 20px;
+}
+
+.content-form-div {
+    margin-top: 20px;
+}
+
+.inputContent {
+    width: 300px;
+    height: 150px;
+}
+
+.content-label {
+    font-size: 20px;
+}
+
+.type-form-div {
+    margin-top: 20px;
+}
+
+.type-label {
+    font-size: 20px;
+}
+
+.type-select {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 28px;
+}
+
+.dugmici-form-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button-add {
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.button-add {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+.button-edit {
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+:hover.button-edit {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.button-cancel {
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+:hover.button-cancel {
+    background-color: darkred;
+    border-radius: 4px;
+    border: none;
+}
+
+.header-profile-div {
+    margin-left: auto;
+    width: 250px;
+}
+
+.profile-div {
+    justify-content: space-evenly;
+    display: flex;
+    justify-items: end;
+    margin-top: 70px;
+}
+
+.ime-label {
+    font-size: 20px;
+}
+
+.prezime-label {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.btnLogout {
+    width: 90px;
+    height: 100%;
+    display: inline-block;
+    font-size: 15xp;
+    margin-left: 10px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+:hover.btnLogout {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+
+.clanak-komentari-container {
+    background-color: green;
+    height: auto;
+    width: 100%;
+}
+
+.clanak-container {
+    margin-top: 30px;
+}
+
+.clanak-div {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.clanak-info-container {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.title-clanak {
+    font-size: 30px;
+    padding: 10%;
+    text-align: center;
+}
+
+.autor-clanak {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.tip-clanak {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.content-clanak {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+
+.clanak-komentari-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.clanak-komentari-div {
+    height: 80%;
+    color: white;
+    padding: 10px;
+}
+
+.konobar-input-div {
+    height: 15%;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.komentar-input {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+}
+
+.komentar-button {
+    background-color: lightgrey;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+:hover.komentar-button {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.komentar {
+    border: 1px solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.komentar-user {
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.izadji-button {
+
+    color: white;
+    font-size: 16px;
+    background-color: red;
+    cursor: pointer;
+}
+
+:hover.izadji-button {
+    background-color: darkred;
+    cursor: pointer;
+}
+.prijava-button{
+    margin-right: 1%;
+}
+.search-div{
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+.search-input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.meni-btn-div{
+    margin-left: 1%;
+}
+.btnOpenMeni{
+    margin-top: 50px;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 1%;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+:hover.btnOpenMeni {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+.filtriraj-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 100%;
+}
+.autor-input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+.type-label-filter{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: white;
+}
+.type-filter{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+.button-resetuj-filter{
+    
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    margin: 20 auto;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+:hover.button-resetuj-filter {
+    background-color: rgb(211, 210, 210);
+    border-radius: 4px;
+    border: none;
+}
+.dugmici-clanak
+{
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.button-izmeni{
+    width: 20%;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+:hover.button-izmeni {
+    background-color: darkgreen;
+    border-radius: 4px;
+    border: none;
+}
+.button-izbrisi{
+    width: 20%;
+    text-align: center;
+    height: 30px;
+    font-size: 18px;
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+:hover.button-izbrisi {
+    background-color: darkred;
+    border-radius: 4px;
+    border: none;
+}
